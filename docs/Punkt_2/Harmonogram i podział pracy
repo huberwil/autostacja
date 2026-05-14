@@ -1,0 +1,31 @@
+# Harmonogram pracy
+
+do 7 maja 2026: 
+Hubert - Przegląd rozwiązań, struktura repo, konwencje Git;
+Zbyszko - Zapoznanie z wymaganiami, wybór technologii frontend;
+Szymon - Analiza czujników, wybór protokołów I/O.
+
+do 14 maja 2026: 
+Hubert - Konfiguracja repo, code review, merge PR;
+Zbyszko - Diagramy UML interfejsu (GUI + WWW);
+Szymon - Diagramy UML sensorów i przepływu danych.
+
+do 21 maja 2026:
+Hubert - Schemat SQLite + EF Core, migracje, encje;
+Zbyszko - Klasa Sensor, podgląd struktury;
+Szymon - Klasy Measurement/WeatherData, stub czujników (symulacja).
+
+do 28 maja 2026:
+Hubert - Synchronizacja z chmurą, API REST, endpointy;
+Zbyszko - Dashboard WPF + strona WWW, wykresy LiveCharts2;
+Szymon - Integracja czujników z bazą, testy end-to-end.
+
+do 4 czerwca 2026: 
+Hubert - Code review, refaktoring, optymalizacja zapytań SQL;
+Zbyszko - Dokumentacja Doxygen, testy UI, responsywność;
+Szymon - Testy jednostkowe sensorów, mocki, profiler.
+
+do 11 czerwca 2026:
+Hubert - Backup, deployment, weryfikacja repo;
+Zbyszko - Prezentacja GUI, poprawki UX;
+Szymon - Prezentacja sensorów, kalibracja na żywo.

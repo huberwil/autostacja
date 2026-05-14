@@ -1,8 +1,0 @@
-# Harmonogram pracy
-
-do 7 maja 2026 - przegląd możliwych rozwiązań, zapoznanie z wymaganiami oraz założeniami dotyczącymi realizacji projektu, podział ról w zespole
-do 14 maja 2026 - konfiguracja repozytorium, implementacja diagramów UML określających działanie stacji
-do 21 maja 2026 - stworzenie lokalnej bazy danych i logiki służącej do zapisu danych historycznych
-do 28 maja 2026 - stworzenie interfejsu graficznego oraz strony WWW oraz ich integracja z bazą danych, opracowanie dokumentacji Doxygen
-do 4 czerwca 2026 - testy jednostkowe, optymalizacja kodu dla lepszej wydajności
-do 11 czerwca 2026 - testy całościowe, finalizacja zadania
