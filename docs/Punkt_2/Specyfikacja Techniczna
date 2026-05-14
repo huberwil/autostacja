@@ -1,3 +1,11 @@
+Języki:
+C++
+C#
+
+IDE:
+VS Code + PlatformIO
+Visual Studio 2022
+
 Czujniki:
 Czujnik BME280 - Pomiar wilgotności, temperatury oraz ciśnienia
 Weather Meter Kit - Pomiar opadów oraz kierunku i prędkości wiatru
