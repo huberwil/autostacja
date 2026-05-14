@@ -1,0 +1,42 @@
+Czujniki:
+Czujnik BME280 - Pomiar wilgotności, temperatury oraz ciśnienia
+Weather Meter Kit - Pomiar opadów oraz kierunku i prędkości wiatru
+
+Moduły:
+Moduł LoRa32U4 - układ ATmega32U4 oraz radio LoRa oparte na układzie Semtech SX1276
+
+Biblioteki:
+LoRa - obsługa komunikacji radiowej
+Adafruit BME280 - obsługa sensora BME280
+Wire - biblioteka do komunikacji po magistrali I2C
+SPI - biblioteka do komunikacji procesora z modułem radiowym
+Low-Power - zarządzanie trybami uśpienia i oszczędzaniem energii
+System.IO.Ports - odbieranie danych z odbiornika przez USB
+Microsoft.EntityFrameworkCore.Sqlite - obsługa bazy danych pomiarowych
+LiveCharts - generowanie interaktywnych wykresów dla rolnika
+
+Uproszczony schemat:
+            CZUJNIKI                                 LoRa32U4
+    +-----------------------+               +--------------------------+
+    |        BME280         |               |                          |
+    | (Temp / Wilg / Ciśn)  |----[ VCC ]--->| 3.3V                     |
+    |                       |----[ GND ]--->| GND                      |
+    |         (I2C)         |----[ SDA ]--->| D2 (SDA)                 |
+    |                       |----[ SCL ]--->| D3 (SCL)                 |
+    +-----------------------+               |                          |
+                                            |                          |
+    +-----------------------+               |                          |
+    |     DESZCZOMIERZ      |----[ SIG ]--->| D0                       |
+    |  (Impulsy - deszcz)   |----[ GND ]--->| GND                      |
+    +-----------------------+               |                          |
+                                            |                          |
+    +-----------------------+               |                          |
+    |      ANEMOMETR        |----[ SIG ]--->| D1                       |
+    | (Impulsy - prędkość)  |----[ GND ]--->| GND                      |
+    +-----------------------+               |                          |
+                                            |                          |
+    +-----------------------+               |                          |
+    |     WIATROWSKAZ       |----[ VCC ]--->| 3.3V                     |
+    | (Napięcie - kierunek) |----[ SIG ]--->| A0 (Analogowy ADC)       |
+    |                       |               |                          |
+    +-----------------------+               +--------------------------+ 
