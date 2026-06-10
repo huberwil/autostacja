@@ -414,6 +414,10 @@ namespace WeatherStation
                 sum = sum + reading.Value;
                 count = count + 1;
             }
+            if (count == 0)
+            {
+                return 0.0f;
+            }
 
             int averageInt = 100 / count;
             float average = (float)averageInt;
