@@ -418,6 +418,7 @@ namespace WeatherStation
             {
                 return 0.0f;
             }
+
             int averageInt = 100 / count;
             float average = (float)averageInt;
             return average;
